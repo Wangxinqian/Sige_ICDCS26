@@ -31,7 +31,7 @@ async def main(p_length):
 
     # Online-1, reveal and mask
     # 1. Initialize share of confidence vectors
-    p_length = 400
+    p_length = 10
     E = [(i, j) for i in range(0, p_length) for j in range(i+1, p_length)]
     random_values, keys_list = random_values_sorting, keys_list_sorting
     p_1 = torch.zeros_like(torch.rand(1,p_length))

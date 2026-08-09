@@ -19,7 +19,7 @@ async def main():
     await coord.broadcast({"kind": "init"}, tag="init")
     #await coord.send(to = 0, obj = {"kind": "cmd", "from": "coordinator", "msg": [1,2,3,4,5,6,7,8,9]}, tag="cmd")
 
-    p_length = 400
+    p_length = 10
     E = [(i, j) for i in range(0, p_length) for j in range(i+1, p_length)]
     message_to_p0, message_to_p1 = [[],[], [],[], [],[]], [[],[], [],[], [],[]]
     random_values = []
